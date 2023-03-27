@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3CE532F29CB45F800C5D0E1 /* NCXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE532E29CB45F800C5D0E1 /* NCXApp.swift */; };
-		E3CE533129CB45F800C5D0E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533029CB45F800C5D0E1 /* ContentView.swift */; };
+		E30E65F029D1D1FC0066C1C6 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E65EF29D1D1FC0066C1C6 /* Details.swift */; };
+		E3CE532F29CB45F800C5D0E1 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE532E29CB45F800C5D0E1 /* Main.swift */; };
+		E3CE533129CB45F800C5D0E1 /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533029CB45F800C5D0E1 /* Missions.swift */; };
 		E3CE533329CB45F900C5D0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE533229CB45F900C5D0E1 /* Assets.xcassets */; };
-		E3CE533629CB45F900C5D0E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE533529CB45F900C5D0E1 /* Preview Assets.xcassets */; };
+		E3CE533E29CB463B00C5D0E1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533D29CB463B00C5D0E1 /* API.swift */; };
+		E3CE534029CB467800C5D0E1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533F29CB467800C5D0E1 /* Models.swift */; };
+		E3CE534229CB52B600C5D0E1 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE534129CB52B600C5D0E1 /* Element.swift */; };
+		E3CE534429CB55D500C5D0E1 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE534329CB55D500C5D0E1 /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E3CE532B29CB45F800C5D0E1 /* NCX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3CE532E29CB45F800C5D0E1 /* NCXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCXApp.swift; sourceTree = "<group>"; };
-		E3CE533029CB45F800C5D0E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E30E65EF29D1D1FC0066C1C6 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		E3CE532B29CB45F800C5D0E1 /* MarsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3CE532E29CB45F800C5D0E1 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		E3CE533029CB45F800C5D0E1 /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
 		E3CE533229CB45F900C5D0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3CE533529CB45F900C5D0E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3CE533D29CB463B00C5D0E1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E3CE533F29CB467800C5D0E1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E3CE534129CB52B600C5D0E1 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		E3CE534329CB55D500C5D0E1 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +40,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30E65EE29D1D1E90066C1C6 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE534129CB52B600C5D0E1 /* Element.swift */,
+				E3CE534329CB55D500C5D0E1 /* Grid.swift */,
+				E30E65EF29D1D1FC0066C1C6 /* Details.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		E3CE532229CB45F800C5D0E1 = {
 			isa = PBXGroup;
 			children = (
-				E3CE532D29CB45F800C5D0E1 /* NCX */,
+				E3CE532D29CB45F800C5D0E1 /* MarsWatch */,
 				E3CE532C29CB45F800C5D0E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,36 +61,38 @@
 		E3CE532C29CB45F800C5D0E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3CE532B29CB45F800C5D0E1 /* NCX.app */,
+				E3CE532B29CB45F800C5D0E1 /* MarsWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E3CE532D29CB45F800C5D0E1 /* NCX */ = {
+		E3CE532D29CB45F800C5D0E1 /* MarsWatch */ = {
 			isa = PBXGroup;
 			children = (
-				E3CE532E29CB45F800C5D0E1 /* NCXApp.swift */,
-				E3CE533029CB45F800C5D0E1 /* ContentView.swift */,
+				E3CE532E29CB45F800C5D0E1 /* Main.swift */,
+				E30E65EE29D1D1E90066C1C6 /* Image */,
+				E3CE533029CB45F800C5D0E1 /* Missions.swift */,
 				E3CE533229CB45F900C5D0E1 /* Assets.xcassets */,
-				E3CE533429CB45F900C5D0E1 /* Preview Content */,
+				E3CE533C29CB461700C5D0E1 /* Data */,
 			);
-			path = NCX;
+			path = MarsWatch;
 			sourceTree = "<group>";
 		};
-		E3CE533429CB45F900C5D0E1 /* Preview Content */ = {
+		E3CE533C29CB461700C5D0E1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E3CE533529CB45F900C5D0E1 /* Preview Assets.xcassets */,
+				E3CE533D29CB463B00C5D0E1 /* API.swift */,
+				E3CE533F29CB467800C5D0E1 /* Models.swift */,
 			);
-			path = "Preview Content";
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E3CE532A29CB45F800C5D0E1 /* NCX */ = {
+		E3CE532A29CB45F800C5D0E1 /* MarsWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3CE533929CB45F900C5D0E1 /* Build configuration list for PBXNativeTarget "NCX" */;
+			buildConfigurationList = E3CE533929CB45F900C5D0E1 /* Build configuration list for PBXNativeTarget "MarsWatch" */;
 			buildPhases = (
 				E3CE532729CB45F800C5D0E1 /* Sources */,
 				E3CE532829CB45F800C5D0E1 /* Frameworks */,
@@ -82,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = NCX;
+			name = MarsWatch;
 			productName = NCX;
-			productReference = E3CE532B29CB45F800C5D0E1 /* NCX.app */;
+			productReference = E3CE532B29CB45F800C5D0E1 /* MarsWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E3CE532629CB45F800C5D0E1 /* Build configuration list for PBXProject "NCX" */;
+			buildConfigurationList = E3CE532629CB45F800C5D0E1 /* Build configuration list for PBXProject "MarsWatch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3CE532A29CB45F800C5D0E1 /* NCX */,
+				E3CE532A29CB45F800C5D0E1 /* MarsWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +145,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3CE533629CB45F900C5D0E1 /* Preview Assets.xcassets in Resources */,
 				E3CE533329CB45F900C5D0E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3CE533129CB45F800C5D0E1 /* ContentView.swift in Sources */,
-				E3CE532F29CB45F800C5D0E1 /* NCXApp.swift in Sources */,
+				E3CE534229CB52B600C5D0E1 /* Element.swift in Sources */,
+				E3CE533129CB45F800C5D0E1 /* Missions.swift in Sources */,
+				E3CE534029CB467800C5D0E1 /* Models.swift in Sources */,
+				E3CE534429CB55D500C5D0E1 /* Grid.swift in Sources */,
+				E3CE533E29CB463B00C5D0E1 /* API.swift in Sources */,
+				E30E65F029D1D1FC0066C1C6 /* Details.swift in Sources */,
+				E3CE532F29CB45F800C5D0E1 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +290,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NCX/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = T8HX5554JX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NCX/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = T8HX5554JX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E3CE532629CB45F800C5D0E1 /* Build configuration list for PBXProject "NCX" */ = {
+		E3CE532629CB45F800C5D0E1 /* Build configuration list for PBXProject "MarsWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3CE533729CB45F900C5D0E1 /* Debug */,
@@ -329,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3CE533929CB45F900C5D0E1 /* Build configuration list for PBXNativeTarget "NCX" */ = {
+		E3CE533929CB45F900C5D0E1 /* Build configuration list for PBXNativeTarget "MarsWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3CE533A29CB45F900C5D0E1 /* Debug */,

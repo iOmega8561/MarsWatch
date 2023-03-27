@@ -53,7 +53,11 @@
 		E3CE532229CB45F800C5D0E1 = {
 			isa = PBXGroup;
 			children = (
-				E3CE532D29CB45F800C5D0E1 /* MarsWatch */,
+				E3CE533C29CB461700C5D0E1 /* Data */,
+				E3CE533229CB45F900C5D0E1 /* Assets.xcassets */,
+				E3CE533029CB45F800C5D0E1 /* Missions.swift */,
+				E30E65EE29D1D1E90066C1C6 /* Image */,
+				E3CE532E29CB45F800C5D0E1 /* Main.swift */,
 				E3CE532C29CB45F800C5D0E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,18 +68,6 @@
 				E3CE532B29CB45F800C5D0E1 /* MarsWatch.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E3CE532D29CB45F800C5D0E1 /* MarsWatch */ = {
-			isa = PBXGroup;
-			children = (
-				E3CE532E29CB45F800C5D0E1 /* Main.swift */,
-				E30E65EE29D1D1E90066C1C6 /* Image */,
-				E3CE533029CB45F800C5D0E1 /* Missions.swift */,
-				E3CE533229CB45F900C5D0E1 /* Assets.xcassets */,
-				E3CE533C29CB461700C5D0E1 /* Data */,
-			);
-			path = MarsWatch;
 			sourceTree = "<group>";
 		};
 		E3CE533C29CB461700C5D0E1 /* Data */ = {

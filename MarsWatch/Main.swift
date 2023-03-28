@@ -11,7 +11,7 @@ import SwiftUI
 struct MarsWatch: App {
     var body: some Scene {
         WindowGroup {
-            Missions()
+            MainView()
         }
     }
 }

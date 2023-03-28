@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Grid: View {
+struct LatestImages: View {
     let name: String
     private let nasaAPI: NasaAPI = NasaAPI()
     @State private var photos: [Photo] = []
@@ -23,13 +23,13 @@ struct Grid: View {
                         ScrollView {
                             LazyVGrid(columns: gridItemLayout, spacing: 10) {
                                 ForEach(photos) { photo in
-                                    NavigationLink(destination: Details(photo: photo)) {
+                                    NavigationLink(destination: DetailedView(photo: photo)) {
                                         ZStack {
                                             
                                             RoundedRectangle(cornerRadius: 8)
                                                 .fill(Color.black)
                                             
-                                            Element(imageSource: photo.imageSource)
+                                            RemoteImage(imageSource: photo.imageSource)
                                                 .scaledToFit()
                                             
                                         }
@@ -63,8 +63,8 @@ struct Grid: View {
     }
 }
 
-struct Grid_Previews: PreviewProvider {
+struct LatestImages_Previews: PreviewProvider {
     static var previews: some View {
-        Grid(name: "Curiosity")
+        LatestImages(name: "Curiosity")
     }
 }

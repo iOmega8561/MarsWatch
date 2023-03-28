@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Details: View {
+struct DetailedView: View {
     let photo: Photo
     
     var body: some View {
@@ -15,7 +15,7 @@ struct Details: View {
             
             VStack {
                 
-                Element(imageSource: photo.imageSource)
+                RemoteImage(imageSource: photo.imageSource)
                 
                 Spacer()
                 
@@ -51,9 +51,9 @@ struct Details: View {
     }
 }
 
-struct Details_Previews: PreviewProvider {
+struct DetailedVIew_Previews: PreviewProvider {
     static var previews: some View {
-        Details(photo: Photo(
+        DetailedView(photo: Photo(
             id: 1,
             sol: 1,
             camera: Camera(name: "CMF", fullName: "Camera McLens Face"),

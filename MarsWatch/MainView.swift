@@ -1,5 +1,5 @@
 //
-//  Missions.swift
+//  MainView.swift
 //  NCX
 //
 //  Created by Giuseppe Rocco on 22/03/23.
@@ -7,20 +7,15 @@
 
 import SwiftUI
 
-let rovers: [Rover] = [
-    Rover(name: "Perseverance", mission: "Mars 2020", imgSrc: "https://mars.nasa.gov/layout/mars2020/images/LearnAboutTheRover_Perseverance_QuickFacts.png"),
-    Rover(name: "Curiosity", mission: "MSL", imgSrc: "https://mars.nasa.gov/system/feature_items/images/6037_msl_banner.jpg")
-]
-
-struct Missions: View {
+struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
                 ScrollView(.vertical) {
                     ForEach(rovers, id: \.self) { rover in
-                        NavigationLink(destination: Grid(name: rover.name)) {
+                        NavigationLink(destination: LatestImages(name: rover.name)) {
                             
-                        Element(imageSource: rover.imgSrc)
+                        RemoteImage(imageSource: rover.imgSrc)
                                 .scaledToFill()
                                 .frame(width: 350, height: 300)
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -50,8 +45,8 @@ struct Missions: View {
     }
 }
 
-struct Missions_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        Missions()
+        MainView()
     }
 }

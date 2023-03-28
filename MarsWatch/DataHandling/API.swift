@@ -33,7 +33,6 @@ class NasaAPI {
             throw APIError.requestURLInvalid(apiRequest.urlString)
         }
         
-        // Make sure the API key is always in the request query string
         let queryItems = (components.queryItems ?? []) + [URLQueryItem(name: "api_key", value: apiKey)]
         components.queryItems = queryItems
         
@@ -58,5 +57,26 @@ extension APIRequest {
         self.decodeJSON = { data in
             return try JSONDecoder().decode(T.self, from: data)
         }
+    }
+}
+
+func fetchLatestPhotos(rovers: [Rover]) async -> [Photo] {
+    await withTaskGroup(of: Photo?.self) { group in
+        
+        for rover in rovers {
+            group.addTask {
+                let photos = try? await NasaAPI().latestPhotos(rover: rover.name)
+                return photos?.first
+            }
+        }
+        
+        var latestPhotos: [Photo] = []
+        for await result in group {
+            if let photo = result {
+                latestPhotos.append(photo)
+            }
+        }
+        
+        return latestPhotos
     }
 }

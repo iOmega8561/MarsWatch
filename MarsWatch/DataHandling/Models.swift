@@ -14,6 +14,11 @@ struct Rover: Hashable {
     let imgSrc: String
 }
 
+let rovers: [Rover] = [
+    Rover(name: "Perseverance", mission: "Mars 2020", imgSrc: "https://mars.nasa.gov/layout/mars2020/images/LearnAboutTheRover_Perseverance_QuickFacts.png"),
+    Rover(name: "Curiosity", mission: "MSL", imgSrc: "https://mars.nasa.gov/system/feature_items/images/6037_msl_banner.jpg")
+]
+
 struct Camera: Codable {
     let name: String
     let fullName: String

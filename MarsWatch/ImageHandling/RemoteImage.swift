@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Element: View {
+struct RemoteImage: View {
     let imageSource: String
     
     var body: some View {
@@ -40,8 +40,8 @@ struct Element: View {
     }
 }
 
-struct Element_Previews: PreviewProvider {
+struct RemoteImage_Previews: PreviewProvider {
     static var previews: some View {
-        Element(imageSource: "https://example.com")
+        RemoteImage(imageSource: "https://example.com")
     }
 }

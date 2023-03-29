@@ -60,6 +60,7 @@ extension APIRequest {
     }
 }
 
+//Experimental stuff
 func fetchLatestPhotos(rovers: [Rover]) async -> [Photo] {
     await withTaskGroup(of: Photo?.self) { group in
         

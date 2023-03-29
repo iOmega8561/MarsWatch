@@ -18,6 +18,7 @@ struct RemoteImage: View {
                     Spacer()
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: Color.accentColor))
+                    Spacer()
                     
                 case .success(let image):
                     image

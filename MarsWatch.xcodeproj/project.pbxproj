@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E30E65F029D1D1FC0066C1C6 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E65EF29D1D1FC0066C1C6 /* DetailedView.swift */; };
+		E30E65F029D1D1FC0066C1C6 /* PictureDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E65EF29D1D1FC0066C1C6 /* PictureDetails.swift */; };
 		E3CE532F29CB45F800C5D0E1 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE532E29CB45F800C5D0E1 /* Main.swift */; };
 		E3CE533129CB45F800C5D0E1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533029CB45F800C5D0E1 /* MainView.swift */; };
 		E3CE533329CB45F900C5D0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE533229CB45F900C5D0E1 /* Assets.xcassets */; };
 		E3CE533E29CB463B00C5D0E1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533D29CB463B00C5D0E1 /* API.swift */; };
 		E3CE534029CB467800C5D0E1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE533F29CB467800C5D0E1 /* Models.swift */; };
 		E3CE534229CB52B600C5D0E1 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE534129CB52B600C5D0E1 /* RemoteImage.swift */; };
-		E3CE534429CB55D500C5D0E1 /* LatestImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE534329CB55D500C5D0E1 /* LatestImages.swift */; };
+		E3CE534429CB55D500C5D0E1 /* LatestPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE534329CB55D500C5D0E1 /* LatestPictures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E30E65EF29D1D1FC0066C1C6 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		E30E65EF29D1D1FC0066C1C6 /* PictureDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDetails.swift; sourceTree = "<group>"; };
 		E3CE532B29CB45F800C5D0E1 /* MarsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CE532E29CB45F800C5D0E1 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		E3CE533029CB45F800C5D0E1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -26,7 +26,7 @@
 		E3CE533D29CB463B00C5D0E1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E3CE533F29CB467800C5D0E1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E3CE534129CB52B600C5D0E1 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
-		E3CE534329CB55D500C5D0E1 /* LatestImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestImages.swift; sourceTree = "<group>"; };
+		E3CE534329CB55D500C5D0E1 /* LatestPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPictures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +44,8 @@
 			isa = PBXGroup;
 			children = (
 				E3CE534129CB52B600C5D0E1 /* RemoteImage.swift */,
-				E3CE534329CB55D500C5D0E1 /* LatestImages.swift */,
-				E30E65EF29D1D1FC0066C1C6 /* DetailedView.swift */,
+				E3CE534329CB55D500C5D0E1 /* LatestPictures.swift */,
+				E30E65EF29D1D1FC0066C1C6 /* PictureDetails.swift */,
 			);
 			path = ImageHandling;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 				E3CE534229CB52B600C5D0E1 /* RemoteImage.swift in Sources */,
 				E3CE533129CB45F800C5D0E1 /* MainView.swift in Sources */,
 				E3CE534029CB467800C5D0E1 /* Models.swift in Sources */,
-				E3CE534429CB55D500C5D0E1 /* LatestImages.swift in Sources */,
+				E3CE534429CB55D500C5D0E1 /* LatestPictures.swift in Sources */,
 				E3CE533E29CB463B00C5D0E1 /* API.swift in Sources */,
-				E30E65F029D1D1FC0066C1C6 /* DetailedView.swift in Sources */,
+				E30E65F029D1D1FC0066C1C6 /* PictureDetails.swift in Sources */,
 				E3CE532F29CB45F800C5D0E1 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

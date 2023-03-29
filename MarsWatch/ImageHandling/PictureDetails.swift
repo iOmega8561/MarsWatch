@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailedView: View {
+struct PictureDetails: View {
     let photo: Photo
     
     var body: some View {
@@ -46,14 +46,14 @@ struct DetailedView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8))
             }
             .padding()
-            .navigationTitle("Details")
+            .navigationTitle("Picture Details")
         }
     }
 }
 
 struct DetailedVIew_Previews: PreviewProvider {
     static var previews: some View {
-        DetailedView(photo: Photo(
+        PictureDetails(photo: Photo(
             id: 1,
             sol: 1,
             camera: Camera(name: "CMF", fullName: "Camera McLens Face"),

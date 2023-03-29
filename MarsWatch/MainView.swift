@@ -13,7 +13,7 @@ struct MainView: View {
             VStack {
                 ScrollView(.vertical) {
                     ForEach(rovers, id: \.self) { rover in
-                        NavigationLink(destination: LatestImages(name: rover.name)) {
+                        NavigationLink(destination: LatestPictures(name: rover.name)) {
                             
                         RemoteImage(imageSource: rover.imgSrc)
                                 .scaledToFill()

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LatestImages: View {
+struct LatestPictures: View {
     let name: String
     private let nasaAPI: NasaAPI = NasaAPI()
     @State private var photos: [Photo] = []
@@ -23,7 +23,7 @@ struct LatestImages: View {
                         ScrollView {
                             LazyVGrid(columns: gridItemLayout, spacing: 10) {
                                 ForEach(photos) { photo in
-                                    NavigationLink(destination: DetailedView(photo: photo)) {
+                                    NavigationLink(destination: PictureDetails(photo: photo)) {
                                         ZStack {
                                             
                                             RoundedRectangle(cornerRadius: 8)
@@ -65,6 +65,6 @@ struct LatestImages: View {
 
 struct LatestImages_Previews: PreviewProvider {
     static var previews: some View {
-        LatestImages(name: "Curiosity")
+        LatestPictures(name: "Curiosity")
     }
 }

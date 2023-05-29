@@ -1,4 +1,5 @@
 # MarsWatch
+This project is unmaintained and has been archived.
 ## Disclaimer
 This is learning project, it's not meant to be a production-ready 
 application so expect issues to exist.
@@ -10,6 +11,3 @@ It works by requesting data via http from api.nasa.gov, to then decode and parse
 
 ## API Key
 In order for the application to work, an API key is needed. You should head to https://api.nasa.gov to obtain your own key.
-
-## Next goals
-Provide a custom implementation of SwiftUI's facility AsyncImage

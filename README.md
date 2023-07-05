@@ -1,5 +1,7 @@
 # MarsWatch
-This project is unmaintained and has been archived.
+MarsWatch allows you to keep up with the latest news from our Mars ambassadors.
+![alt text](https://github.com/iOmega8561/MarsWatch/blob/master/composition.png?raw=true)
+
 ## Disclaimer
 This is learning project, it's not meant to be a production-ready 
 application so expect issues to exist.
